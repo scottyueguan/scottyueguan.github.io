@@ -2,12 +2,18 @@
 main:
   - title: "Publications"
     url: /publications/
+    
+  # - title: "Research"
+  #   url: /research/
 
-  - title: "Projects"
-    url: /projects/
+  # - title: "Teaching"
+  #   url: /teaching/
 
-  - title: "Education"
-    url: /education/
+  # - title: "Software"
+  #   url: /software/
 
-  - title: "Service"
-    url: /service/
+  # - title: "Posts"
+  #   url: /posts/
+    
+  - title: "CV"
+    url: https://drive.google.com/file/d/1Aq3knUXDiCL-rG-HsVT0HRr2KuTNZN6w/view?usp=sharing

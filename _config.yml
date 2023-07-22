@@ -7,17 +7,17 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jaein Lim"
+title                    : "Scott Yue Guan"
 title_separator          : "-"
-name                     : &name "Jaein Lim"
-description              : &description "Jaein Lim"
-url                      : https://jliminf.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Scott Yue Guan"
+description              : &description "Scott Yue Guan"
+url                      : https://scott-guan.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "jliminf/jliminf.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+repository               : "scottyueguan/scottyueguan.github.io"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -57,12 +57,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : # scottyguan
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : #profile.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -73,21 +73,22 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "goatcounter" # false (default), "google", "google-universal", "custom", "goatcounter"
   google:
-    tracking_id          :
+    tracking_id          : 
 
 
 # Site Author
 author:
-  name             : "Jaein Lim"
-  avatar           : "jliminf.jpeg"
-  bio              : "PhD candidate<br> Daniel Guggenheim School of Aerospace Engineering<br> Georgia Tech"
+  name             : "Scott Yue Guan"
+  avatar           : "profile.jpeg"
+  bio              : "Ph.D. Candidate<br> Georgia Tech"
   location         : "Atlanta, GA"
   employer         :
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=q5Ap8eAAAAAJ&hl=en&oi=ao"
-  email            : jliminf@gmail.com
+  pubmed           :
+  orcid            : # "http://orcid.org/0000-0002-6356-3340"
+  googlescholar    : "https://scholar.google.com/citations?user=Gr0QHIEAAAAJ"
+  email            : "yguan44@gatech.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +97,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : #"academicpages"
+  github           : # "scottyueguan"
+  gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : #"http://orcid.org/yourorcidurl"
+  linkedin         : "scottyguan"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : #"https://stackoverflow.com/users/10912314/jayrobwilliams"
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : # "scottyguan"
   vine             :
   weibo            :
   xing             :
@@ -127,6 +128,7 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .Rproj.user
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
@@ -175,16 +177,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  projects:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -230,19 +226,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _projects
+  # _research
   - scope:
       path: ""
-      type: projects
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
+      type: research
     values:
       layout: single
       author_profile: true
@@ -267,7 +254,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
